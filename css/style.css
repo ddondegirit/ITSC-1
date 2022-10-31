@@ -1,0 +1,308 @@
+@import url(../css/reset.css);
+@import url(../css/fonts.css);
+
+
+/* Header 영역 */
+.header{
+  position:relative;
+  width:100%; 
+  height:70px;
+  background:#000;
+  padding:0 45px;
+  display:flex;
+  align-items:center;
+  z-index:3;
+}
+
+.header__logo{
+  margin-right:100px;
+  display:flex;
+}
+
+.header__logo img{
+  width:60px;
+}
+
+.header__nav{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  flex:1;
+  font-size:14px;
+}
+
+.header__nav__links{
+  display:flex;
+  align-items:center;
+  gap:60px;
+  color:#f6d587;
+}
+
+.header__nav__linkTo{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  flex:1;
+  justify-content: flex-end;
+}
+
+.header__nav__linkTo > li{
+  display:flex;
+}
+
+.header__nav__button{
+  display:inline-block;
+  width:150px;
+  height:44px;
+  border-radius:50px;
+}
+
+.header__nav__button--nftMania{
+  background:url(../images/nftmania-btn.png) #d42528 no-repeat center center;
+  background-size:auto 30px;
+}
+
+.header__nav__button--opensea{
+  background:url(../images/opensea-btn.png) #d42528 no-repeat center center;
+  background-size:auto 30px;
+}
+
+.header__mobile__menu{
+  display:none;
+}
+
+@media (max-width: 991px){
+  .header{
+    padding: 0 20px;
+    height:70px;
+    justify-content: space-between;
+  }
+
+  .header__logo img{
+    width:45px;
+  }
+
+  .header__mobile__menu{
+    display:flex;
+  }
+
+  .header__mobile__menu img{
+    width:25px;
+  }
+
+  .header__nav{
+    display:none;
+  }
+}
+
+/* Header 영역 */
+
+
+/* Main - mainVisual 영역 */
+.mainVisual{
+  position:relative;
+  min-height:calc(100vh - 70px);
+  background:url(../images/mainVisual-bg1.png) #000 no-repeat left top;
+  overflow:hidden;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainVisual__circle{
+  position:absolute;
+  width:calc(140vh);
+  height:calc(140vh);
+  background:url(../images/mainVisual-bg2.png) #d42528;
+  border-radius:100%;
+  top:-30vh;
+  right:-50vh;
+  z-index:1;
+}
+
+.mainVisual__tigerSymbol{
+  position:absolute;
+  top:0;
+  right:0;
+  width:28%;
+  padding-top:28%;
+  z-index:2;
+  background:url(../images/mainVisual-bg3.png) no-repeat bottom right;
+  background-size:cover;
+}
+
+.mainVisual__title{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-right:60px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.mainVisual__title__txt{
+  background:#d2b450;
+  background: -webkit-linear-gradient(#d2b450, #e6d27d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight:900;
+  line-height:1;
+  text-align:center;
+  width:100%;
+  position:relative;
+  left:100px;
+}
+
+.mainVisual__title__txt1{
+  font-size:70px;
+  letter-spacing:0px;
+}
+
+.mainVisual__title__txt2{
+  font-size:130px;
+}
+
+.mainVisual__title__txt3{
+  font-size:55px;
+  letter-spacing:0px;
+}
+
+.mainVisual__tigers{
+  position:relative;
+  z-index:4;
+  display:flex;
+  align-items:flex-end;
+  height:calc(100vh - 70px);
+  left:100px;
+}
+
+.mainVisual__tigers img{
+  height:86vh;
+}
+/* Main - mainVisual 영역 */
+
+
+/* Main - ITSC Info 영역 */
+.ITSC__info{
+  position:relative;
+  min-height:100vh;
+  background:url(../images/ITSC-hangul-right.png) no-repeat right -100px, url(../images/ITSC-hangul-left.png) no-repeat left 200px, url(../images/ITSC-bg1.png) no-repeat;
+  background-size:auto, auto,cover;
+  z-index:4;
+  overflow:hidden;
+  padding:130px 0 0;
+}
+
+.ITSC__container{
+  width:100%;
+  max-width:1290px;
+  padding:0 20px;
+  margin:0 auto 130px;
+}
+
+.ITSC__project{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.ITSC__project__logo{
+  position:relative;
+  width:55%;
+  text-align:center;
+  flex:1;
+}
+
+.ITSC__project__logo img{
+  width:60%;
+}
+
+.ITSC__project__info{
+  width:45%;
+}
+
+.ITSC__section__header{
+  display:flex;
+  flex-direction: column;
+  line-height:1;
+}
+
+.ITSC__section__header--center{
+  align-items:center;
+}
+
+.ITSC__section__header__number{
+  background:#d2b450;
+  background: -webkit-linear-gradient(#d2b450, #e6d27d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Orbitron', sans-serif;
+  font-size:1.5em;
+  font-weight:400;
+  margin-bottom:20px;
+}
+
+.ITSC__section__header__title{
+  font-family: 'Orbitron', 'Noto Sans KR', sans-serif;
+  background:#d2b450;
+  background: -webkit-linear-gradient(#d2b450, #e6d27d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size:2.9em;
+  font-weight:900;
+  margin-bottom:20px;
+}
+
+.ITSC__section__header__subtitle{
+  font-family: 'Orbitron', 'Noto Sans KR', sans-serif;
+  display:flex;
+  align-items:center;
+  background:#d2b450;
+  background: -webkit-linear-gradient(#d2b450, #e6d27d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom:20px;
+  font-size:1.3em;
+  font-weight:600;
+}
+
+.ITSC__section__header__subtitle:before{
+  content:'';
+  display:inline-block;
+  width:24px;
+  height:1px;
+  border-top:1px solid #d2b450;
+  background:#e3cd76;
+  margin-right:10px;
+}
+
+.ITSC__projecct__info__txt{
+  display:flex;
+  flex-direction:column;
+  color:#fff;
+}
+
+.ITSC__hr{
+  width:100%;
+  max-width:1290px;
+  padding:0 20px;
+  margin:0 auto 120px;
+  display:flex;
+  align-items:center;
+}
+
+.ITSC__hr img{
+  width:calc(100% - 40px);
+}
+
+.ITSC__hr:after,
+.ITSC__hr:before{
+  content:'';
+  display:inline-block;
+  width:20px;
+  height:20px;
+  background:url(../images/ITSC-hr-side.png);
+  background-size:cover;
+}
+/* Main - ITSC Info 영역 */
+

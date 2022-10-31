@@ -1,0 +1,24 @@
+* {
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+a:hover{
+  color:inherit;
+}
+
+body{
+  overflow-x:hidden;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight:400;
+}
+
+ul,ol{
+  list-style: none;
+}
