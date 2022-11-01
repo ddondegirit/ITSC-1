@@ -188,15 +188,14 @@
   background:url(../images/ITSC-hangul-right.png) no-repeat right -100px, url(../images/ITSC-hangul-left.png) no-repeat left 200px, url(../images/ITSC-bg1.png) no-repeat;
   background-size:auto, auto,cover;
   z-index:4;
-  overflow:hidden;
-  padding:130px 0 0;
+  padding:150px 0 0;
 }
 
 .ITSC__container{
   width:100%;
   max-width:1290px;
   padding:0 20px;
-  margin:0 auto 130px;
+  margin:0 auto 100px;
 }
 
 .ITSC__project{
@@ -242,6 +241,16 @@
   margin-bottom:20px;
 }
 
+.ITSC__section__header--black .ITSC__section__header__number{
+  background:none;
+  -webkit-text-fill-color: #000;
+}
+
+.ITSC__section__header--white .ITSC__section__header__number{
+  background:none;
+  -webkit-text-fill-color: #fff;
+}
+
 .ITSC__section__header__title{
   font-family: 'Orbitron', 'Noto Sans KR', sans-serif;
   background:#d2b450;
@@ -251,6 +260,16 @@
   font-size:2.9em;
   font-weight:900;
   margin-bottom:20px;
+}
+
+.ITSC__section__header--black .ITSC__section__header__title{
+  background:none;
+  -webkit-text-fill-color: #000;
+}
+
+.ITSC__section__header--white .ITSC__section__header__title{
+  background:none;
+  -webkit-text-fill-color: #fff;
 }
 
 .ITSC__section__header__subtitle{
@@ -266,6 +285,16 @@
   font-weight:600;
 }
 
+.ITSC__section__header--black .ITSC__section__header__subtitle{
+  background:none;
+  -webkit-text-fill-color: #000;
+}
+
+.ITSC__section__header--white .ITSC__section__header__subtitle{
+  background:none;
+  -webkit-text-fill-color: #fff;
+}
+
 .ITSC__section__header__subtitle:before{
   content:'';
   display:inline-block;
@@ -274,6 +303,16 @@
   border-top:1px solid #d2b450;
   background:#e3cd76;
   margin-right:10px;
+}
+
+.ITSC__section__header--black .ITSC__section__header__subtitle:before{
+  border-top:1px solid #000;
+  background:#000;
+}
+
+.ITSC__section__header--white .ITSC__section__header__subtitle:before{
+  border-top:1px solid #fff;
+  background:#fff;
 }
 
 .ITSC__projecct__info__txt{
@@ -291,6 +330,20 @@
   align-items:center;
 }
 
+.ITSC__hr--2{
+  position:absolute;
+  top:-46px;
+  left:calc(50% - 645px);
+  z-index:3;
+}
+
+.ITSC__hr--3{
+  position:absolute;
+  top:-46px;
+  left:calc(50% - 645px);
+  z-index:3;
+}
+
 .ITSC__hr img{
   width:calc(100% - 40px);
 }
@@ -299,10 +352,449 @@
 .ITSC__hr:before{
   content:'';
   display:inline-block;
-  width:20px;
-  height:20px;
+  width:25px;
+  height:25px;
   background:url(../images/ITSC-hr-side.png);
   background-size:cover;
 }
+
+.ITSC__hr--2:after,
+.ITSC__hr--2:before{
+  content:'';
+  display:inline-block;
+  width:25px;
+  height:25px;
+  background:url(../images/ITSC-hr-side2.png);
+  background-size:cover;
+}
+
+.ITSC__hr--3:after,
+.ITSC__hr--3:before{
+  content:'';
+  display:inline-block;
+  width:25px;
+  height:25px;
+  background:url(../images/ITSC-hr-side.png);
+  background-size:cover;
+}
+
+.ITSC__minting{
+  position:relative;
+  margin-top:40px;
+}
+
+.ITSC__minting__bars{
+  padding:15px;
+  background:linear-gradient(#d2b450, #e6d27d);
+  border-radius:15px;
+  display:flex;
+  gap:6px;
+}
+
+.ITSC__minting__bars span{
+  border-radius:15px;
+  padding:25px 0;
+  font-size:1.1em;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-weight:600;
+}
+
+.ITSC__minting__p{
+  color:#8f752b;
+  border:2px solid #8f752b;
+  background:#fff;
+  flex:1;
+}
+
+.ITSC__minting__s{
+  color:#000000;
+  border:2px solid #000000;
+  background:#fff;
+  flex:1;
+}
+
+.ITSC__minting__yl{
+  color:#c52225;
+  border:2px solid #c52225;
+  background:#fff;
+  flex:2;
+}
+
+.ITSC__minting__m{
+  border:2px solid #c52225;
+  background:#c52225;
+  flex:6;
+}
+
+.ITSC__minting__m strong{
+  font-family: 'Orbitron', 'Noto Sans KR', sans-serif;
+  background:#d2b450;
+  background: -webkit-linear-gradient(#d2b450, #e6d27d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size:1.5em;
+  font-weight:900;
+}
+
+.ITSC__minting__infos{
+  position:relative;
+  padding-top:2px;
+  display:flex;
+  align-items:center;
+  text-align:center;
+  padding:2px 0 0 0;
+}
+
+.ITSC__minting__before{
+  flex:4;
+  font-size:1.3em;
+  border-right:1px solid #000;
+  border-left:1px solid #000;
+  padding:15px 11px 0 11px;
+}
+
+.ITSC__minting__before:before{
+  content:'0EA';
+  display:inline-block;
+  position:absolute;
+  left:-18px;
+  bottom:-30px;
+}
+
+.ITSC__minting__after{
+  flex:6;
+  padding-top:15px;
+  border-right:1px solid #000;
+  font-size:1.3em;
+}
+
+.ITSC__minting__after:after{
+  content:'10,000EA';
+  display:inline-block;
+  position:absolute;
+  right:-44px;
+  bottom:-30px;
+}
+
+.ITSC__minting__moreInfo{
+  padding:50px 0 0 0;
+  color:#fff;
+  width:fit-content;
+  margin:0 auto;
+}
+
+.ITSC__minting__moreInfo p{
+  margin-bottom:13px;
+  font-size:1.1em;
+}
+
+.ITSC__minting__bottom{
+  position:relative;
+  bottom:-40px;
+}
+
+.ITSC__minting__bottom img{
+  width:100%;
+}
 /* Main - ITSC Info 영역 */
+
+/* Main - ITSC Story 영역 */
+.ITSC__story{
+  padding:200px 0;
+  background:url(../images/ITSC-story-bg.png) #000;
+}
+
+.ITSC__story__box{
+  padding:70px 0 20px;
+  display:flex;
+  justify-content: space-between;
+  align-items:flex-end;
+}
+
+.ITSC__story__tiger{
+  position:relative;
+  flex:3;
+}
+
+.ITSC__story__ballon{
+  position:absolute;
+  text-align:center;
+}
+
+.ITSC__story__ballon span{
+  background:#d2b450;
+  background: -webkit-linear-gradient(#d2b450, #e6d27d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size:1.1em;
+  font-weight:900;
+}
+
+.ITSC__story__ballon--1{
+  right:-110px;
+  top:70px;
+  width:146px;
+  height:185px;
+  background:url(../images/ITSC-story-ballon1.png);
+  padding-top:41px;
+  padding-left:5px;
+}
+
+.ITSC__story__ballon--2{
+  left:-145px;
+  top:70px;
+  width:175px;
+  height:143px;
+  background:url(../images/ITSC-story-ballon2.png);
+  padding-top:33px;
+  padding-right:32px;
+}
+
+.ITSC__story__ballon--3{
+  right:-110px;
+  top:70px;
+  width:146px;
+  height:185px;
+  background:url(../images/ITSC-story-ballon1.png);
+  padding-top:55px;
+  padding-left:5px;
+}
+
+.ITSC__story__ballon--4{
+  left:-145px;
+  top:70px;
+  width:175px;
+  height:143px;
+  background:url(../images/ITSC-story-ballon2.png);
+  padding-top:33px;
+  padding-right:32px;
+}
+
+.ITSC__story__content{
+  position:relative;
+  background:rgba(0,0,0,0.5);
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1)), linear-gradient(#d2b450, #e6d27d);;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.ITSC__story__content__padding{
+  padding:40px 50px;
+  color:#fae9ea;
+}
+
+.ITSC__story__content__padding strong{
+  color:#fff;
+  font-weight:700;
+}
+
+.ITSC__story__content__title{
+  position:absolute;
+  top:-35px;
+  left:30px;
+  color:#000;
+  font-size:45px;
+  font-weight:700;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.ITSC__story__content__title--1{
+  width:70px;
+  height:71px;
+  background:url(../images/ITSC-story-title1.png);
+}
+
+.ITSC__story__content__title--2{
+  width:74px;
+  height:73px;
+  background:url(../images/ITSC-story-title2.png);
+}
+
+.ITSC__story__content__p{
+  background:#d2b450;
+  background: -webkit-linear-gradient(#d2b450, #e6d27d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size:1.3em;
+  margin:7px 0 10px;
+  font-weight:900;
+}
+
+.ITSC__story__content__txt{
+  line-height:1.7;
+  font-size:1.1em;
+}
+/* Main - ITSC Story 영역 */
+
+/* Main - ITSC Gallery 영역 */
+.ITSC__gallery{
+  position:relative;
+  padding:120px 0 50px;
+  background:url(../images/gallery-bg.png) no-repeat #f5f5f5 center 30%;
+}
+
+.ITSC__gellary__nfts{
+  padding:70px 0 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.ITSC__gellary__nft__market{
+  display:flex;
+  justify-content: space-evenly;
+  align-items:center;
+}
+
+.ITSC__gellary__nft__market > a{
+  width:35%;
+  border-radius:50px;
+  height:70px;
+}
+
+.ITSC__gellary__nftmania{
+  background:url(../images/nftmania-btn.png) no-repeat #000 center center;
+  background-size:auto 45px;
+}
+
+.ITSC__gellary__opensea{
+  background:url(../images/opensea-btn.png) no-repeat #000 center center;
+  background-size:auto 45px;
+}
+/* Main - ITSC Gallery 영역 */
+
+/* Main - ITSC Community 영역 */
+.ITSC__comunity{
+  position:relative;
+  padding:150px 0 50px;
+  background:#000
+}
+
+.ITSC__community__box{
+  position:relative;
+  width:584px;
+  padding-top:584px;
+  background:url(../images/commu-content-bg.png) no-repeat;
+  background-size: cover;
+  border-radius:584px;
+  transition:background 0.5s;
+  margin:0 auto;
+  cursor:pointer;
+  display:block;
+}
+
+.ITSC__community__box:hover{
+  background:url(../images/commu-content-bg2.png) no-repeat;
+}
+
+.ITSC__community__box__button{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  text-align:center;
+}
+
+.ITSC__community__box__txt1{
+  color:#fff;
+  font-size:2em;
+  line-height:1.15;
+  margin:20px 0;
+}
+
+.ITSC__community__box__txt2{
+  color:#ffc028;
+  font-size:2.5em;
+  font-weight:700;
+  line-height:1.15;
+}
+/* Main - ITSC Community 영역 */
+
+/* Main - ITSC Collaboration 영역 */
+.ITSC__collaboration{
+  position:relative;
+  padding:100px 0 50px;
+  background:url(../images/ITSC-hangul-right.png) no-repeat right -100px, url(../images/ITSC-hangul-left.png) no-repeat left 200px, #db2629;
+  background-size:500px auto, 400px auto;
+}
+
+.ITSC__collaboration__contents{
+  padding:70px 0 0;
+  text-align:center;
+  background:url(../images/collabo-cloud1.png) no-repeat left top, url(../images/collabo-cloud2.png) no-repeat right bottom;
+}
+
+.ITSC__collaboration__contents img{
+  transition:all 1s;
+}
+
+.ITSC__collaboration__contents img:hover{
+  transform:rotate(360deg) scale(1.05);
+}
+/* Main - ITSC Collaboration 영역 */
+
+/* footer */
+.footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#000;
+  padding:25px 45px;
+}
+
+.footer__copyright{
+  display:flex;
+  align-items:center;
+}
+
+.footer__copyright img{
+  width:82px;
+  margin-right:15px;
+}
+
+.footer__copyright span{
+  color:#999999;
+  font-family: 'Orbitron', sans-serif;
+  font-size:14px;
+}
+
+.footer__documents{
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+
+.footer__documents a{
+  background:#121212;
+  border:1px solid #2f2e2e;
+  color:#c8c8c8;
+  padding:15px 30px;
+  border-radius:50px;
+  font-size:14px;
+  display:flex;
+  align-items:center;
+}
+
+.footer__documents a:after{
+  content:'';
+  display:inline-block;
+  width:16px;
+  height:16px;
+  background:url(../images/footer-newWindow-icon.png);
+  margin-left:8px;
+}
+/* footer */
+
+
 
