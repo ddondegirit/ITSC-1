@@ -666,6 +666,10 @@
     background-size:300px auto, 300px auto,cover;
   }
 
+  .ITSC__info .ITSC__section__header{
+    align-items:center;
+  }
+
   .ITSC__project{
     flex-direction: column;
   }
@@ -750,6 +754,7 @@
 
   .ITSC__minting__moreInfo p{
     font-size:1em;
+    word-break: keep-all;
   }
 
   .ITSC__minting__bottom{
@@ -761,6 +766,24 @@
     position:relative;
     width:1050px;
     left:-50px;
+  }
+
+  .ITSC__projecct__info__txt{
+    word-break: keep-all;
+    display:flex;
+    flex-direction: column;
+    width:90%;
+    max-width:530px;
+    text-align:center;
+    margin:0 auto;
+  }
+
+  .ITSC__projecct__info__txt span{
+    margin-bottom:10px;
+  }
+
+  .ITSC__projecct__info__txt br{
+    display:none;
   }
 }
 
