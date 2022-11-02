@@ -12,7 +12,7 @@
 </head>
 <body>
   <header class="header">
-    <a class="header__logo" href="#">
+    <a class="header__logo" href="/">
       <img src="images/ITSC-logo.svg" alt="">
     </a>
 
@@ -20,13 +20,16 @@
       <img src="images/nav-samsun.png" alt="">
     </a>
     <nav class="header__nav">
+      <a class="header__mobile__menu__close" href="#">
+        <img src="images/menu-close.png" alt="">
+      </a>
       <ul class="header__nav__links">
-        <li><a href="#">프로젝트 소개</a></li>
-        <li><a href="#">민팅플랜</a></li>
-        <li><a href="#">ISTC 스토리</a></li>
-        <li><a href="#">ISTC 갤러리</a></li>
-        <li><a href="#">커뮤니티</a></li>
-        <li><a href="#">협업 예정 기업</a></li>
+        <li><a href="#project">프로젝트 소개</a></li>
+        <li><a href="#minting">민팅플랜</a></li>
+        <li><a href="#story">ITSC 스토리</a></li>
+        <li><a href="#gallery">ITSC 갤러리</a></li>
+        <li><a href="#community">커뮤니티</a></li>
+        <li><a href="#collaboration">협업 예정 기업</a></li>
       </ul>
       <ul class="header__nav__linkTo">
         <li><a class="header__nav__button header__nav__button--nftMania" href="https://nftmania.io/" target="_blank"></a></li>
@@ -34,6 +37,24 @@
       </ul>
     </nav>
   </header>
+
+  <script>
+    const mobileMenuBtn = document.querySelector('.header__mobile__menu');
+    const mobileMenuCloseBtn = document.querySelector('.header__mobile__menu__close');
+    const mobileLinks = document.querySelectorAll('.header__nav__links li');
+    const mobileMenu = document.querySelector('.header__nav')
+    mobileMenuBtn.addEventListener('click', function() {
+      mobileMenu.classList.add('show');
+    });
+    mobileMenuCloseBtn.addEventListener('click', function() {
+      mobileMenu.classList.remove('show');
+    });
+    for(let i=0; i<mobileLinks.length; i++){
+      mobileLinks[i].addEventListener('click', function() {
+        mobileMenu.classList.remove('show');
+      });
+    }
+  </script>
 
   <main>
     <article class="mainVisual">
@@ -51,7 +72,7 @@
       </div>
     </article>
 
-    <article class="ITSC__info">
+    <article class="ITSC__info" id="project">
         <!-- <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="width:100%; height:100%;">
           <path d="M-71.38,184.05 C276.24,-197.84 261.00,210.70 504.22,68.59 L511.57,171.22 L-54.46,211.69 Z" style="fill: #d42528;"></path>\
         </svg> -->
@@ -87,7 +108,7 @@
           </div>
         </section>
 
-        <div class="ITSC__hr">
+        <div class="ITSC__hr" id="minting">
           <img src="images/ITSC-hr-center.png" alt="">
         </div>
 
@@ -129,7 +150,7 @@
         </div>
     </article>
 
-    <article class="ITSC__story">
+    <article class="ITSC__story" id="story">
       <section class="ITSC__container">
         <div class="ITSC__section__header">
           <span class="ITSC__section__header__number">03</span>
@@ -251,7 +272,7 @@
       </section>
     </article>
 
-    <article class="ITSC__gallery">
+    <article class="ITSC__gallery" id="gallery">
       <section class="ITSC__container">
         <div class="ITSC__hr ITSC__hr--2">
           <img src="images/ITSC-hr-center2.png" alt="">
@@ -276,7 +297,7 @@
       </section>
     </article>
 
-    <article class="ITSC__comunity">
+    <article class="ITSC__comunity" id="community">
       <section class="ITSC__container">
         <div class="ITSC__hr ITSC__hr--2">
           <img src="images/ITSC-hr-center2.png" alt="">
@@ -298,7 +319,7 @@
       </section>
     </article>
 
-    <article class="ITSC__collaboration">
+    <article class="ITSC__collaboration" id="collaboration">
       <section class="ITSC__container">
         <div class="ITSC__hr ITSC__hr--3">
           <img src="images/ITSC-hr-center.png" alt="">
