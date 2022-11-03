@@ -1025,6 +1025,16 @@
   align-items:center;
 }
 
+.ITSC__gellary__nfts img:nth-child(1){
+  width:calc(30% - 10px);
+}
+.ITSC__gellary__nfts img:nth-child(2){
+  width:40%;
+}
+.ITSC__gellary__nfts img:nth-child(3){
+  width:calc(30% - 10px);
+}
+
 .ITSC__gellary__nft__market{
   display:flex;
   justify-content: space-evenly;

@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ITSC">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="canonical" href="https://impatienttigersocialclub.com/">
     <link rel="icon" href="images/ITSC-favicon.png">
 </head>
@@ -80,10 +80,6 @@
     </article>
 
     <article class="ITSC__info" id="project">
-        <!-- <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="width:100%; height:100%;">
-          <path d="M-71.38,184.05 C276.24,-197.84 261.00,210.70 504.22,68.59 L511.57,171.22 L-54.46,211.69 Z" style="fill: #d42528;"></path>\
-        </svg> -->
-
         <section class="ITSC__container ITSC__project">
           <div class="ITSC__project__logo">
             <img src="images/ITSC-logo.svg" alt="">
@@ -286,10 +282,39 @@
           <span class="ITSC__section__header__subtitle"></span>
         </div>
 
-        <div class="ITSC__gellary__nfts">
-          <img src="images/ITSC-gallery-img1.png" alt="">
-          <img src="images/ITSC-gallery-img3.png" alt="">
-          <img src="images/ITSC-gallery-img2.png" alt="">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="ITSC__gellary__nfts">
+                <img src="images/ITSC-gallery-img1.png" alt="">
+                <img src="images/ITSC-gallery-img3.png" alt="">
+                <img src="images/ITSC-gallery-img2.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ITSC__gellary__nfts">
+                <img src="images/ITSC-gallery-img11.png" alt="">
+                <img src="images/ITSC-gallery-img5.png" alt="">
+                <img src="images/ITSC-gallery-img6.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ITSC__gellary__nfts">
+                <img src="images/ITSC-gallery-img7.png" alt="">
+                <img src="images/ITSC-gallery-img8.png" alt="">
+                <img src="images/ITSC-gallery-img9.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ITSC__gellary__nfts">
+                <img src="images/ITSC-gallery-img10.png" alt="">
+                <img src="images/ITSC-gallery-img4.png" alt="">
+                <img src="images/ITSC-gallery-img12.png" alt="">
+              </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+          </div>
         </div>
 
         <div class="ITSC__gellary__nft__market">
@@ -413,10 +438,21 @@
     </div>
   </div>
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
   function conditionToggle(){
     document.querySelector('.modal__popup').classList.toggle('show');
   }
+
+  var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+      });
 </script>
-<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
 </html>
