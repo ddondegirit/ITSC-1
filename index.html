@@ -282,40 +282,44 @@
           <span class="ITSC__section__header__subtitle"></span>
         </div>
 
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="ITSC__gellary__nfts">
-                <img src="images/ITSC-gallery-img1.png" alt="">
-                <img src="images/ITSC-gallery-img3.png" alt="">
-                <img src="images/ITSC-gallery-img2.png" alt="">
+        <div style="position:relative;">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="ITSC__gellary__nfts">
+                  <img src="images/ITSC-gallery-img1.png" alt="">
+                  <img src="images/ITSC-gallery-img3.png" alt="">
+                  <img src="images/ITSC-gallery-img2.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="ITSC__gellary__nfts">
+                  <img src="images/ITSC-gallery-img11.png" alt="">
+                  <img src="images/ITSC-gallery-img5.png" alt="">
+                  <img src="images/ITSC-gallery-img6.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="ITSC__gellary__nfts">
+                  <img src="images/ITSC-gallery-img7.png" alt="">
+                  <img src="images/ITSC-gallery-img8.png" alt="">
+                  <img src="images/ITSC-gallery-img9.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="ITSC__gellary__nfts">
+                  <img src="images/ITSC-gallery-img10.png" alt="">
+                  <img src="images/ITSC-gallery-img4.png" alt="">
+                  <img src="images/ITSC-gallery-img12.png" alt="">
+                </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="ITSC__gellary__nfts">
-                <img src="images/ITSC-gallery-img11.png" alt="">
-                <img src="images/ITSC-gallery-img5.png" alt="">
-                <img src="images/ITSC-gallery-img6.png" alt="">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="ITSC__gellary__nfts">
-                <img src="images/ITSC-gallery-img7.png" alt="">
-                <img src="images/ITSC-gallery-img8.png" alt="">
-                <img src="images/ITSC-gallery-img9.png" alt="">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="ITSC__gellary__nfts">
-                <img src="images/ITSC-gallery-img10.png" alt="">
-                <img src="images/ITSC-gallery-img4.png" alt="">
-                <img src="images/ITSC-gallery-img12.png" alt="">
-              </div>
-            </div>
-            <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
           </div>
+          <div class="swiper-button-next ITSC__gellary__next"></div>
+          <div class="swiper-button-prev ITSC__gellary__prev"></div>
         </div>
+        
+        
 
         <div class="ITSC__gellary__nft__market">
           <a href="https://nftmania.io/" target="_blank" class="ITSC__gellary__nftmania"></a>
@@ -448,10 +452,10 @@
         spaceBetween: 10,
         loop: true,
         loopFillGroupWithBlank: true,
-        // navigation: {
-        //   nextEl: ".swiper-button-next",
-        //   prevEl: ".swiper-button-prev",
-        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
 </script>
 

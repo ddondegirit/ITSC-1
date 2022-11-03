@@ -1057,19 +1057,36 @@
   background-size:auto 45px;
 }
 
+.ITSC__gellary__next{
+  top:calc(50% + 22px) !important;
+  right:-50px !important;
+  z-index:2;
+  color:#000 !important;
+}
+
+.ITSC__gellary__prev{
+  top:calc(50% + 22px) !important;
+  left:-50px !important;
+  z-index:2;
+  color:#000 !important;
+}
+
 @media (max-width: 1350px){
   .ITSC__gellary__nfts{
     padding:50px 0;
     justify-content: center;
     gap:10px;
+    margin:0 50px;
   }
 
-  .ITSC__gellary__nfts img{
-    width:25%
+  .ITSC__gellary__next{
+    right:0px !important;
+    top:calc(50%) !important;
   }
-
-  .ITSC__gellary__nfts img:nth-child(2){
-    width:32%
+  
+  .ITSC__gellary__prev{
+    left:0px !important;
+    top:calc(50%) !important;
   }
 }
 
